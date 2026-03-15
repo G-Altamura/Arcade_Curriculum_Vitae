@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "WHO",
+    "skills": "SKILLS",
+    "experience": "EXP",
+    "projects": "CODE",
+    "contact": "MSG"
+  },
+  "home": {
+    "level": "LV. 01",
+    "hp": "HP +99",
+    "name": "GIULIA \nALTAMURA",
+    "bio": "Junior developer blending logic with a passion for creative pixel design.",
+    "roles": [
+      "FRONTEND DEV ✦",
+      "UI/UX ENTHUSIAST",
+      "CREATIVE THINKER",
+      "CODE & AESTHETIC"
+    ]
+  }
+}
