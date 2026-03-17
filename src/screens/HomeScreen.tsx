@@ -57,7 +57,7 @@ onPress={() => setActiveModal({ label: 'Email', url: 'mailto:giulia.altamura@pro
    color={colors.pink} 
    label="CV"
    onPress={() => 
-    setActiveModal({ label: 'CV', url: 'https://your-portfolio.com'})}
+    setActiveModal({ label: 'CV', url: 'https://github.com/G-Altamura/Giulia_CV/blob/006dc3dafd8a1f7b02757f59cf0059c1ad0a0161/assets/Altamura_Giulia_CV.jpg'})}
 />
   <SocialButton 
   icon="⌂" 
