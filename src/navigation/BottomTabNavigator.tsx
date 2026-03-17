@@ -47,7 +47,7 @@ tabBarStyle: {
   borderTopWidth: 2,
   borderTopColor: colors.borderDefault,
   height: 64,
-  paddingBottom: 8,
+  paddingBottom: 2,
 
 },
   tabBarItemStyle: {
