@@ -18,5 +18,21 @@
       "CREATIVE THINKER",
       "CODE & AESTHETIC"
     ]
-  }
+  },
+  "about": {
+  "story": "After years in hospitality I built resilience, multicultural communication and attention to detail. Now I channel that same energy into crafting clean, beautiful UIs.",
+  "badges": [
+  { "trait": "Reliable", "color": "mint" },
+    { "trait": "Creative", "color": "pink" },
+    { "trait": "Detail-oriented", "color": "lavender" },
+    { "trait": "Curious", "color": "yellow" },
+    { "trait": "Team player", "color": "blue" }
+],
+"funFacts": [
+  { "label": "Favourite stack", "value": "React Native" },
+  { "label": "Favourite sport", "value": "Hiking" },
+  { "label": "Secret power", "value": "Solving problems" },
+  { "label": "IRL location", "value": "Bologna, Italy" }
+]
+}
 }

@@ -5,7 +5,6 @@ import { AboutScreen } from '../screens/AboutScreen';
 import { SkillsScreen } from '../screens/SkillsScreen';
 import { ExperienceScreen } from '../screens/ExperienceScreen';
 import { ProjectsScreen } from '../screens/ProjectsScreen';
-import { ContactScreen } from '../screens/ContactScreen';
 import { colors, fonts } from '../theme';
 import { Text } from 'react-native';
 
@@ -68,10 +67,9 @@ tabBarActiveBackgroundColor: 'rgba(255, 45, 120, 0.15)',
         {/*t('nav.home') — the labels come from our translation files*/}
       <Tab.Screen name="Home" component={HomeScreen} options={{ tabBarLabel: t('nav.home') }} />
       <Tab.Screen name="About" component={AboutScreen} options={{ tabBarLabel: t('nav.about') }} />
+      <Tab.Screen name="Projects" component={ProjectsScreen} options={{ tabBarLabel: t('nav.projects') }} />
       <Tab.Screen name="Skills" component={SkillsScreen} options={{ tabBarLabel: t('nav.skills') }} />
       <Tab.Screen name="Experience" component={ExperienceScreen} options={{ tabBarLabel: t('nav.experience') }} />
-      <Tab.Screen name="Projects" component={ProjectsScreen} options={{ tabBarLabel: t('nav.projects') }} />
-      <Tab.Screen name="Contact" component={ContactScreen} options={{ tabBarLabel: t('nav.contact') }} />
     </Tab.Navigator>
   );
 }

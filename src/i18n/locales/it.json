@@ -18,5 +18,21 @@
       "PENSIERO CREATIVO",
       "CODICE & ESTETICA"
     ]
-    }
+    },
+  "about": {
+  "story": "Dopo anni nell'ospitalità ho sviluppato resilienza, comunicazione multiculturale e attenzione al dettaglio. Ora convoglio la stessa energia nella creazione di UI pulite e belle.",
+    "badges": [
+  { "trait": "Affidabile", "color": "mint" },
+    { "trait": "Creativa", "color": "pink" },
+    { "trait": "Precisa", "color": "lavender" },
+    { "trait": "Curiosa", "color": "yellow" },
+    { "trait": "Team player", "color": "blue" }
+],
+"funFacts": [
+  { "label": "Stack preferito", "value": "React Native" },
+  { "label": "Sport preferito", "value": "Trekking" },
+  { "label": "Superpotere segreto", "value": "Risolvere i problemi" },
+  { "label": "Posizione IRL", "value": "Bologna, Italia" }
+]
+}
 }
