@@ -58,5 +58,102 @@
       "label": "OTHER ABILITIES",
       "items": ["Problem Solving", "Adaptability", "Creativity", "Reliability", "Teamwork"]
     }
+  },
+  "experience": {
+  "title": "WORLD 1-4",
+  "mainQuest": "MAIN MISSION",
+  "sideQuests": "SIDE QUESTS",
+  "expandMap": "EXPAND MAP ↓",
+  "collapseMap": "COLLAPSE MAP ↑",
+  "main": {
+    "role": "React Native Developer",
+    "company": "Vaimee Srl",
+    "period": "2026 - 200h",
+    "type": "STAGE",
+    "description": "Cross-platform interface development in React Native and TypeScript.",
+    "tags": ["React Native", "TypeScript"]
+  },
+  "trainingTitle": "TRAINING",
+  "training": [
+  {
+    "role": "Programmer Analyst",
+    "company": "Nuovo Cescot Emilia Romagna",
+    "period": "In progress — 500h",
+    "location": "Bologna",
+    "tags": ["HTML", "CSS", "JavaScript", "WordPress", "AI", "Frontend"]
+  },
+  {
+    "role": "UX/UI Design Specialization",
+    "company": "Domestika",
+    "period": "November 2025 — 12h",
+    "location": "Online",
+    "tags": ["Figma", "UX Research", "Accessibilità"]
   }
+],
+    "sideJobs": [
+  {
+    "role": "Sales Assistant",
+    "company": "Venchi Aeroporto",
+    "period": "08/2025 - 10/2025",
+    "location": "Bologna, Emilia-Romagna"
+  },
+  {
+    "role": "Counter Sales Assistant",
+    "company": "Mmmozza",
+    "period": "11/2021 - 11/2024",
+    "location": "Parigi, Francia"
+  },
+  {
+    "role": "Kitchen Assistant",
+    "company": "Ristobar Granfritto",
+    "period": "05/2021 - 09/2021",
+    "location": "Riccione, Emilia-Romagna"
+  },
+  {
+    "role": "Kitchen Assistant",
+    "company": "Il Pesce Innamorato",
+    "period": "09/2020 - 12/2020",
+    "location": "Rimini, Emilia-Romagna"
+  },
+  {
+    "role": "Counter Sales Assistant",
+    "company": "Paolino Tortellino",
+    "period": "03/2018 - 08/2020",
+    "location": "Rimini, Emilia-Romagna"
+  }
+]
+},
+"projects": {
+  "title": "// CODICE",
+  "projects": [    
+    {
+      "name": "Map Study",
+      "description": "Map Implementation con React Native Maps e Maplibre.",
+      "tags": ["React Native", "Maps"],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "name": "Event Calendar",
+      "description": "A monthly event planner with an interactive calendar interface.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Dynamic-Event-Calendar",
+      "demo": ""
+    },
+    {
+      "name": "Photography Portfolio",
+      "description": "A responsive front-end project that showcases a dynamic photography portfolio.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Photography-Portfolio-Manager",
+      "demo": ""
+    },
+    {
+      "name": "Educational Quiz",
+      "description": "Project with a multiple-choice quiz system with scoring, timer, and statistics.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Interactive-Educational-Quiz",
+      "demo": ""
+    }
+  ]
+}
 }

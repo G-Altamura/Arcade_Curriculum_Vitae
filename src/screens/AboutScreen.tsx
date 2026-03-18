@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../theme';
+import { colors, fonts } from '../theme';
 
 const colorMap: Record<string, string> = {
   mint: colors.mint,
@@ -71,12 +71,6 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 24,
   },
-  title: {
-    color: colors.pink,
-    fontFamily: 'monospace',
-    fontSize: 16,
-    letterSpacing: 2,
-  },
   //STORY; TRAITS; FUN FACTS
   chip:{
   alignSelf: 'flex-start',
@@ -87,7 +81,7 @@ const styles = StyleSheet.create({
 },
 chipText:{
   color: colors.bg,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 8,
   letterSpacing: 1,
 },
@@ -102,16 +96,15 @@ card:{
 //ORIGIN
   cardTitle:{
   color:colors.textPrimary,
-  fontFamily: 'monospace',
+  fontFamily: fonts.pixel,
   fontSize: 15,
   textAlign: 'center',
   letterSpacing: 10,
   marginTop: 5,
-    fontWeight:'bold',
   }, 
   cardText:{
     color:colors.textPrimary,
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     fontSize: 12,
     marginTop: 5,
     textAlign: 'center',
@@ -143,30 +136,29 @@ traitRow:{
   marginTop:2,
 },
 traitCheck:{
-  fontFamily: 'monospace',
+    fontFamily: fonts.mono,
   fontSize: 14,
 },
 traitText:{
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     fontSize: 14,
     marginTop: 5,
 },
 
 //FUNFACTS
 factRow:{
-  fontFamily: 'monospace',
   padding: 4,
   flexDirection: 'row',
   justifyContent: 'space-between',
   marginTop:5,
 },
 factLabel:{
-  fontFamily: 'monospace',
+    fontFamily: fonts.mono,
   fontSize: 11,
   color: colors.textMuted,
 },
 factValue:{
-  fontFamily: 'monospace',
+    fontFamily: fonts.mono,
   fontSize: 11,
   color: colors.mint,
 },

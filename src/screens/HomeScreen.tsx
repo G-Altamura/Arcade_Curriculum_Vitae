@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, Linking, Modal, ScrollView  } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../theme';
 import { useState, useEffect } from 'react';
 import { SocialButton } from '../components/SocialButton';
 import { LanguageToggle } from '../components/LanguangeToggle';
+import { colors, fonts } from '../theme';
 
 export function HomeScreen() {
   const { t } = useTranslation();
@@ -150,7 +150,7 @@ topBar: {
 },
   level: {
     color: colors.textMuted,
-    fontFamily: 'monospace',
+    fontFamily: fonts.pixel,
     fontSize: 10,
     letterSpacing: 2,
   },
@@ -171,12 +171,13 @@ avatar: {
 },
 name: {
   color: colors.textPrimary,
-  fontFamily: 'monospace',
-  fontSize: 35,
+  fontFamily: fonts.pixel,
+  fontSize: 30,
   textAlign: 'center',
   letterSpacing: 10,
   marginTop: 16,
-  fontWeight:'bold',
+  padding:10,
+
 },
 role: {
     paddingHorizontal:5,
@@ -189,10 +190,11 @@ role: {
 roleText: {
   color: colors.bg,  
   fontSize: 20,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
 },
 bio: {
-    color: colors.textMuted,
+  fontFamily: fonts.mono,
+  color: colors.textMuted,
   fontSize: 15,
   textAlign: 'center',
   letterSpacing: 2,
@@ -223,25 +225,25 @@ modalCard: {
 },
 modalTitle: {
   color: colors.pink,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 14,
   letterSpacing: 2,
 },
 modalClose: {
   color: colors.textMuted,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 10,
   letterSpacing: 2,
 },
 modalOpen: {
   color: colors.mint,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 10,
   letterSpacing: 2,
 },
 sectionTitle:{
   color: colors.textPrimary,
-  fontFamily: 'monospace',
+  fontFamily: fonts.pixel,
   fontSize: 15,
   textAlign: 'center',
   letterSpacing: 10,
@@ -263,20 +265,20 @@ projectCard:{
   gap: 6,
 }, 
 projectTag:{
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   color: colors.mint,
   fontSize: 8,
   letterSpacing: 1,
 },
 projectName:{
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   color: colors.textPrimary,
   fontSize: 14,
   letterSpacing: 2,
   fontWeight: 'bold',
 },
 projectSub:{
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   color: colors.textMuted,
   fontSize: 10,
 },
@@ -291,7 +293,7 @@ contactBanner:{
 },
 contactBannerTitle:{
   color: colors.pink,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 10,
   letterSpacing: 2,
 },
@@ -306,13 +308,13 @@ contactContent:{
 },
 contactItem:{
   color: colors.textSecondary,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 11,
   letterSpacing: 1,
 },
 contactClosing:{
   color: colors.mint,
-  fontFamily: 'monospace',
+  fontFamily: fonts.mono,
   fontSize: 10,
   letterSpacing: 1,
   marginTop: 8,

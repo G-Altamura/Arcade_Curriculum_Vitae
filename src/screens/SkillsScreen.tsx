@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../theme';
+import { colors, fonts } from '../theme';
 import { SkillBox } from '../components/SkillBox';
 
 
@@ -55,16 +55,15 @@ const styles = StyleSheet.create({
   },
   title: {
     color: colors.textMuted,
-    fontFamily: 'monospace',
+    fontFamily: fonts.pixel,
     fontSize: 10,
     letterSpacing: 2,
   },
   subtitle: {
     color: colors.textPrimary,
-    fontFamily: 'monospace',
-    fontSize: 24,
+    fontFamily: fonts.pixel,
+    fontSize: 18,
     letterSpacing: 3,
-    fontWeight: 'bold',
   },
   grid:{
     flexDirection: 'row',
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
     fontSize: 9,
     color: colors.bg,
     fontWeight: 'bold',
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     letterSpacing: 2,
   },
 

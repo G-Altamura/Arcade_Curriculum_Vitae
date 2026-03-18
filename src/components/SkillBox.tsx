@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import { colors } from '../theme';
+import { fonts, colors } from '../theme';
 
 interface SkillBoxProps {
   name: string;
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   name: {
     color: colors.textPrimary,
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     fontSize: 10,
     letterSpacing: 1,
   },

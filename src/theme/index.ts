@@ -23,6 +23,6 @@ export const spacing = {
 }
 
 export const fonts = {
-  pixel: 'PressStart2P_400Regular',  //titles
-  mono: 'SpaceMono_400Regular',  
+  pixel: 'PressStart2P_400Regular',
+  mono: 'SpaceMono_400Regular',
 }

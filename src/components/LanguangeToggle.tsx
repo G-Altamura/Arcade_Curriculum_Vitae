@@ -1,6 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../theme';
+import { colors, fonts } from '../theme';
 
 export function LanguageToggle() {
   const { i18n } = useTranslation();
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   label: {
     color: colors.textMuted,
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     fontSize: 10,
     letterSpacing: 1,
   },
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   divider: {
     color: colors.borderDefault,
-    fontFamily: 'monospace',
+    fontFamily: fonts.mono,
     fontSize: 10,
   },
 });

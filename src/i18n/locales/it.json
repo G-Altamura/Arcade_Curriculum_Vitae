@@ -58,5 +58,102 @@
       "label": "CAPACITA' AGGIUNTIVE",
       "items": ["Problem Solving", "Adattabilita", "Creatività", "Affidabilità", "Teamwork"]
     }
+  },
+  "experience": {
+  "title": "WORLD 1-4",
+  "mainQuest": "MISSIONE PRINCIPALE",
+  "sideQuests": "MISSIONI SECONDARIE",
+  "expandMap": "ESPANDI MAPPA ↓",
+  "collapseMap": "CHIUDI MAPPA ↑",
+  "main": {
+    "role": "React Native Developer",
+    "company": "Vaimee Srl",
+    "period": "2026 - 200h",
+    "type": "STAGE",
+    "description": "Sviluppo di interfacce cross-platform in React Native e TypeScript.",
+    "tags": ["React Native", "TypeScript"]
+  },
+  "trainingTitle": "FORMAZIONE",
+  "training": [
+  {
+    "role": "Tecnico Analista Programmatore Specialista",
+    "company": "Nuovo Cescot Emilia Romagna",
+    "period": "In corso — 500h",
+    "location": "Bologna",
+    "tags": ["HTML", "CSS", "JavaScript", "WordPress", "AI", "Frontend"]
+  },
+  {
+    "role": "UX/UI Design Specialization",
+    "company": "Domestika",
+    "period": "Novembre 2025 — 12h",
+    "location": "Online",
+    "tags": ["Figma", "UX Research", "Accessibilità"]
   }
+],
+  "sideJobs": [
+  {
+    "role": "Commessa",
+    "company": "Venchi Aeroporto",
+    "period": "08/2025 - 10/2025",
+    "location": "Bologna, Emilia-Romagna"
+  },
+  {
+    "role": "Commessa Banconista",
+    "company": "Mmmozza",
+    "period": "11/2021 - 11/2024",
+    "location": "Parigi, Francia"
+  },
+  {
+    "role": "Aiuto Cuoca",
+    "company": "Ristobar Granfritto",
+    "period": "05/2021 - 09/2021",
+    "location": "Riccione, Emilia-Romagna"
+  },
+  {
+    "role": "Aiuto Cuoca",
+    "company": "Il Pesce Innamorato",
+    "period": "09/2020 - 12/2020",
+    "location": "Rimini, Emilia-Romagna"
+  },
+  {
+    "role": "Commessa Banconista",
+    "company": "Paolino Tortellino",
+    "period": "03/2018 - 08/2020",
+    "location": "Rimini, Emilia-Romagna"
+  }
+]
+},
+"projects": {
+  "title": "// CODICE",
+  "projects": [
+    {
+      "name": "Studio sulle Mappe",
+      "description": "Implementazione mappe con React Native Maps e Maplibre.",
+      "tags": ["React Native", "Maps"],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "name": "Calendario ad Eventi",
+      "description": "Pianificatore mensile con interfaccia calendario interattiva.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Dynamic-Event-Calendar",
+      "demo": ""
+    },
+    {
+      "name": "Portfolio di Fotografia",
+      "description": "Portfolio fotografico dinamico e responsive.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Photography-Portfolio-Manager",
+      "demo": ""
+    },
+    {
+      "name": "Quiz Educativo",
+      "description": "Quiz a risposta multipla con punteggio, timer e statistiche.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/G-Altamura/Interactive-Educational-Quiz",
+      "demo": ""
+    }
+  ]
+}
 }
