@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.textMuted,
     fontFamily: fonts.pixel,
-    fontSize: 10,
+    fontSize: 15,
     letterSpacing: 2,
   },
   subtitle: {

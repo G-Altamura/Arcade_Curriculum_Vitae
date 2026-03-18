@@ -15,18 +15,18 @@
     "roles": [
       "FRONTEND DEV ✦",
       "UI/UX ENTHUSIAST",
-      "PENSIERO CREATIVO",
-      "CODICE & ESTETICA"
+      "CODICE CREATIVO",
+      "LOGICA & ESTETICA"
     ]
     },
   "about": {
     "story": "Dopo anni nell'ospitalità ho sviluppato resilienza, comunicazione multiculturale e attenzione al dettaglio. Ora convoglio la stessa energia nella creazione di UI pulite e belle.",
       "badges": [
-    { "trait": "Affidabile", "color": "mint" },
-      { "trait": "Creativa", "color": "pink" },
-      { "trait": "Precisa", "color": "lavender" },
-      { "trait": "Curiosa", "color": "yellow" },
-      { "trait": "Team player", "color": "blue" }
+    { "trait": "Esploratrice digitale sempre in apprendimento", "color": "mint" },
+      { "trait": "Adattabile e pronta ad apprendere in nuovi contesti", "color": "pink" },
+      { "trait": "Problem solver guidata dalla curiosità", "color": "lavender" },
+      { "trait": "Creatività applicata tra design e sviluppo", "color": "yellow" },
+      { "trait": "Affidabile nel lavoro in team", "color": "blue" }
       ],
       "funFacts": [
         { "label": "Stack preferito", "value": "React Native" },
@@ -36,7 +36,7 @@
       ]
     },
   "skills": {
-  "title": "STATS MENU",
+  "title": "Statistiche",
   "subtitle": "SUPERPOTERI",
     "frontend": {
       "label": "FRONTEND",
@@ -47,7 +47,7 @@
       "items": ["React Native", "React", "Typescript"]
     },
       "Crafting_Tools": {
-      "label": "IN AGGIUNTA",
+      "label": "STRUMENTI CREATIVI",
       "items": ["Figma", "AI Tools", "Clip Studio Paint"]
     },
       "Language_Pack": {
@@ -55,12 +55,12 @@
       "items": ["Italiano", "Inglese B2", "Francese A2"]
     },
       "Abilita_Passive": {
-      "label": "CAPACITA' AGGIUNTIVE",
+      "label": "CAPACITA' TRASVERSALI",
       "items": ["Problem Solving", "Adattabilita", "Creatività", "Affidabilità", "Teamwork"]
     }
   },
   "experience": {
-  "title": "WORLD 1-4",
+  "title": "Mondo 1-4",
   "mainQuest": "MISSIONE PRINCIPALE",
   "sideQuests": "MISSIONI SECONDARIE",
   "expandMap": "ESPANDI MAPPA ↓",
@@ -124,7 +124,7 @@
 ]
 },
 "projects": {
-  "title": "// CODICE",
+  "title": "CODICE",
   "projects": [
     {
       "name": "Studio sulle Mappe",

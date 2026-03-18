@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { colors, fonts } from '../theme';
+import { PixelCard } from '../components/PixelCard';
 
 export function ExperienceScreen() {
   const { t } = useTranslation();
@@ -13,7 +14,8 @@ export function ExperienceScreen() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.title}>{t('experience.title')}</Text>
         <Text style={styles.sectionTitle}>{t('experience.mainQuest')}</Text>
-        <View style={styles.questCard}>
+
+        <PixelCard borderColor={colors.pink} cornerColor={colors.mint}>
           <View style={styles.questHeader}>
             <View style={styles.typeChip}>
               <Text style={styles.typeChipText}>{t('experience.main.type')}</Text>
@@ -30,11 +32,11 @@ export function ExperienceScreen() {
               </View>
             ))}
           </View>
-        </View>
+        </PixelCard>
 
         <Text style={styles.sectionTitle}>{t('experience.trainingTitle')}</Text>
           {(t('experience.training', { returnObjects: true }) as Array<{role: string, company: string, period: string, location: string, tags: string[]}>).map((item) => (
-            <View key={item.company} style={styles.sideCard}>
+            <PixelCard key={item.company} borderColor={colors.pink} cornerColor={colors.mint}>
               <Text style={styles.sideRole}>{item.role}</Text>
               <Text style={styles.sideCompany}>{item.company}</Text>
               <Text style={styles.sidePeriod}>{item.period} · {item.location}</Text>
@@ -45,8 +47,10 @@ export function ExperienceScreen() {
                   </View>
                 ))}
               </View>
-            </View>
+            </PixelCard>
           ))}
+
+          
         <Text style={styles.sectionTitle}>{t('experience.sideQuests')}</Text>
         <TouchableOpacity 
           style={styles.expandButton}
@@ -87,7 +91,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.textMuted,
     fontFamily: fonts.pixel,
-    fontSize: 10,
+    fontSize: 15,
     letterSpacing: 2,
   },
   sectionTitle:{

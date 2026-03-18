@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { colors, fonts } from '../theme';
+import { PixelCard } from '../components/PixelCard';
 
 const colorMap: Record<string, string> = {
   mint: colors.mint,
@@ -17,50 +18,44 @@ export function AboutScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.card}>
+        <PixelCard borderColor={colors.pink} cornerColor={colors.mint}>
           <View style={styles.chip}>
             <Text style={styles.chipText}>[ STORY ]</Text>
           </View>
-          <Text style={styles.cardTitle}>// ORIGIN STORY</Text>
+          <Text style={styles.cardTitle}>ORIGIN STORY</Text>
           <Text style={styles.cardText}>{t('about.story')}</Text>
-          <View style={styles.cornerTL} />
-          <View style={styles.cornerBR} />
-        </View>
+        </PixelCard>
         
 
-  <View style={styles.card}>        
-  <View style={styles.chip}>
-    <Text style={styles.chipText}>[ TRAITS ]</Text>
-  </View>
-  <Text style={styles.cardTitle}>// CHARACTER</Text>
-  {(t('about.badges', { returnObjects: true }) as Array<{trait: string, color: string}>).map((item) => (
-  <View key={item.trait} style={styles.traitRow}>
-    <Text style={[styles.traitCheck, { color: colorMap[item.color] }]}>▶</Text>
-    <Text style={[styles.traitText, { color: colorMap[item.color] }]}>{item.trait}</Text>
-  </View>
-))}
-  <View style={styles.cornerTL} />
-  <View style={styles.cornerBR} />
-</View>
+        <PixelCard borderColor={colors.pink} cornerColor={colors.mint}>       
+        <View style={styles.chip}>
+          <Text style={styles.chipText}>[ TRAITS ]</Text>
+        </View>
+        <Text style={styles.cardTitle}>CHARACTER</Text>
+        {(t('about.badges', { returnObjects: true }) as Array<{trait: string, color: string}>).map((item) => (
+        <View key={item.trait} style={styles.traitRow}>
+          <Text style={[styles.traitCheck, { color: colorMap[item.color] }]}>▶</Text>
+          <Text style={[styles.traitText, { color: colorMap[item.color] }]}>{item.trait}</Text>
+        </View>
+      ))}
+      </PixelCard>
 
-<View style={styles.card}>
-  <View style={styles.chip}>
-    <Text style={styles.chipText}>[ FUN FACTS ]</Text>
-  </View>
-  <Text style={styles.cardTitle}>// ABOUT ME</Text>
-  {(t('about.funFacts', { returnObjects: true }) as Array<{label: string, value: string}>).map((item) => (
-    <View key={item.label} style={styles.factRow}>
-      <Text style={styles.factLabel}>{item.label}</Text>
-      <Text style={styles.factValue}>{item.value}</Text>
-    </View>
-  ))}
-  <View style={styles.cornerTL} />
-  <View style={styles.cornerBR} />
-</View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
+    <PixelCard borderColor={colors.pink} cornerColor={colors.mint}> 
+      <View style={styles.chip}>
+        <Text style={styles.chipText}>[ FUN FACTS ]</Text>
+      </View>
+      <Text style={styles.cardTitle}>ABOUT ME</Text>
+      {(t('about.funFacts', { returnObjects: true }) as Array<{label: string, value: string}>).map((item) => (
+        <View key={item.label} style={styles.factRow}>
+          <Text style={styles.factLabel}>{item.label}</Text>
+          <Text style={styles.factValue}>{item.value}</Text>
+        </View>
+      ))}
+    </PixelCard>
+          </ScrollView>
+        </SafeAreaView>
+      );
+    }
 
 const styles = StyleSheet.create({
   container: {
@@ -85,14 +80,6 @@ chipText:{
   fontSize: 8,
   letterSpacing: 1,
 },
-card:{
-  position: 'relative',
-  padding: 20,
-  borderWidth: 2,
-  borderColor: colors.pink,
-  borderLeftWidth: 2,
-  backgroundColor: colors.bgCard,
-},
 //ORIGIN
   cardTitle:{
   color:colors.textPrimary,
@@ -109,24 +96,6 @@ card:{
     marginTop: 5,
     textAlign: 'center',
   },
-
-  //QUADRETTINI COLORATI
-  cornerTL:{
-  position: 'absolute',
-  top: -2,
-  left: -2,
-  width: 8,
-  height: 8,
-  backgroundColor: colors.mint,
-},
-cornerBR:{
-  position: 'absolute',
-  bottom: -2,
-  right: -2,
-  width: 8,
-  height: 8,
-  backgroundColor: colors.blue,
-},
 
 //CHAR
 traitRow:{

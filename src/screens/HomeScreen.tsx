@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { SocialButton } from '../components/SocialButton';
 import { LanguageToggle } from '../components/LanguangeToggle';
 import { colors, fonts } from '../theme';
+import { PixelCard } from '../components/PixelCard';
 
 export function HomeScreen() {
   const { t } = useTranslation();
@@ -75,25 +76,26 @@ onPress={() => setActiveModal({ label: 'Email', url: 'mailto:giulia.altamura@pro
     url: 'https://www.linkedin.com/in/giulia-altamura-39a855372/'})} 
     />
 </View>
-<Text style={styles.sectionTitle}>// PROJECTS</Text>
+
+<Text style={styles.sectionTitle}>PROJECTS</Text>
 <View style={styles.projectsRow}>
-  <View style={styles.projectCard}>
+  <PixelCard borderColor={colors.pink} cornerColor={colors.mint} style={{ flex: 1 }}>
     <Text style={styles.projectTag}>REACT NATIVE</Text>
     <Text style={styles.projectName}>VAIMEE</Text>
     <Text style={styles.projectSub}>Cross-platform UI</Text>
-  </View>
-  <View style={styles.projectCard}>
+  </PixelCard>
+  <PixelCard borderColor={colors.borderDefault} cornerColor={colors.textMuted} style={{ flex: 1 }}>
     <Text style={styles.projectTag}>COMING SOON</Text>
     <Text style={styles.projectName}>???</Text>
     <Text style={styles.projectSub}>// LOADING...</Text>
-  </View>
+  </PixelCard>
 </View>
 <TouchableOpacity 
   style={styles.contactBanner} 
   onPress={() => setContactOpen(!contactOpen)}
 >
   <Text style={styles.contactBannerTitle}>
-    {contactOpen ? '[ CLOSE ]' : '// GET IN TOUCH ↓'}
+    {contactOpen ? '[ CLOSE ]' : ' GET IN TOUCH ↓'}
   </Text>
 </TouchableOpacity>
 
@@ -256,14 +258,6 @@ projectsRow:{
   paddingHorizontal: 16,
   alignSelf: 'stretch',
 },
-projectCard:{
-  flex: 1,
-  borderWidth: 2,
-  padding: 16,
-  borderColor: colors.borderDefault,
-  backgroundColor: colors.bgCard,
-  gap: 6,
-}, 
 projectTag:{
   fontFamily: fonts.mono,
   color: colors.mint,
@@ -286,13 +280,13 @@ contactBanner:{
   alignSelf: 'stretch',
   marginTop: 24,
   borderWidth: 2,
-  borderColor: colors.pink,
+  borderColor: colors.yellow,
   padding: 16,
   marginHorizontal: 16,
   alignItems: 'center',
 },
 contactBannerTitle:{
-  color: colors.pink,
+  color: colors.yellow,
   fontFamily: fonts.mono,
   fontSize: 10,
   letterSpacing: 2,
@@ -302,7 +296,7 @@ contactContent:{
   marginHorizontal: 16,
   borderWidth: 2,
   borderTopWidth: 0,
-  borderColor: colors.pink,
+  borderColor: colors.yellow,
   padding: 16,
   gap: 12,
 },

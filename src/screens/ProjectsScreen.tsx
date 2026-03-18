@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Linking } from 'r
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { colors, fonts } from '../theme';
+import { PixelCard } from '../components/PixelCard';
 
 export function ProjectsScreen() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export function ProjectsScreen() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.title}>{t('projects.title')}</Text>
             {(t('projects.projects', { returnObjects: true }) as Array<{name: string, description: string, github: string, demo: string, tags: string[]}>).map((item) => (
-              <View key={item.name} style={styles.projectCard}>
+              <PixelCard key={item.name} borderColor={colors.pink} cornerColor={colors.mint}>
                 <Text style={styles.projectName}>{item.name}</Text>
                 <Text style={styles.projectDesc}>{item.description}</Text>
 
@@ -41,7 +42,7 @@ export function ProjectsScreen() {
                           </TouchableOpacity>
                         )}
                       </View>
-              </View>
+              </PixelCard>
             ))}
       </ScrollView>
     </SafeAreaView>
@@ -58,9 +59,9 @@ const styles = StyleSheet.create({
     gap: 24,
   },
   title: {
-    color: colors.pink,
+    color: colors.textPrimary,
     fontFamily: fonts.pixel,
-    fontSize: 16,
+    fontSize: 15,
     letterSpacing: 3,
   },
   projectCard :{

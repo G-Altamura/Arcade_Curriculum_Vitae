@@ -15,18 +15,18 @@
     "roles": [
       "FRONTEND DEV ✦",
       "UI/UX ENTHUSIAST",
-      "CREATIVE THINKER",
-      "CODE & AESTHETIC"
+      "CREATIVE CODE",
+      "LOGIC & ART"
     ]
   },
   "about": {
     "story": "After years in hospitality I built resilience, multicultural communication and attention to detail. Now I channel that same energy into crafting clean, beautiful UIs.",
     "badges": [
-    { "trait": "Reliable", "color": "mint" },
-      { "trait": "Creative", "color": "pink" },
-      { "trait": "Detail-oriented", "color": "lavender" },
-      { "trait": "Curious", "color": "yellow" },
-      { "trait": "Team player", "color": "blue" }
+    { "trait": "Digital explorer with a continuous learning mindset", "color": "mint" },
+      { "trait": "Adaptable and quick to learn in new environments", "color": "pink" },
+      { "trait": "Curiosity-driven problem solver", "color": "lavender" },
+      { "trait": "Bridging creativity between design and development", "color": "yellow" },
+      { "trait": "Reliable team player", "color": "blue" }
     ],
     "funFacts": [
       { "label": "Favourite stack", "value": "React Native" },
@@ -36,7 +36,7 @@
     ]
   },
   "skills": {
-  "title": "STATS MENU",
+  "title": "Stats Menu",
   "subtitle": "SUPERPOWERS",  
       "frontend": {
       "label": "FRONTEND",
@@ -55,7 +55,7 @@
       "items": ["Italian", "English B2", "French A2"]
     },
       "Abilita_Passive": {
-      "label": "OTHER ABILITIES",
+      "label": "PASSIVE BUFFS",
       "items": ["Problem Solving", "Adaptability", "Creativity", "Reliability", "Teamwork"]
     }
   },
@@ -124,7 +124,7 @@
 ]
 },
 "projects": {
-  "title": "// CODICE",
+  "title": "CODE PROJECTS",
   "projects": [    
     {
       "name": "Map Study",
