@@ -47,7 +47,7 @@ export function AboutScreen() {
   <View style={styles.chip}>
     <Text style={styles.chipText}>[ FUN FACTS ]</Text>
   </View>
-  <Text style={styles.cardTitle}>// FUN FACTS</Text>
+  <Text style={styles.cardTitle}>// ABOUT ME</Text>
   {(t('about.funFacts', { returnObjects: true }) as Array<{label: string, value: string}>).map((item) => (
     <View key={item.label} style={styles.factRow}>
       <Text style={styles.factLabel}>{item.label}</Text>
@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     letterSpacing: 2,
   },
+  //STORY; TRAITS; FUN FACTS
   chip:{
   alignSelf: 'flex-start',
   backgroundColor: colors.lavender,
@@ -94,10 +95,11 @@ card:{
   position: 'relative',
   padding: 20,
   borderWidth: 2,
-  borderColor: colors.borderDefault,
+  borderColor: colors.pink,
   borderLeftWidth: 2,
   backgroundColor: colors.bgCard,
 },
+//ORIGIN
   cardTitle:{
   color:colors.textPrimary,
   fontFamily: 'monospace',
@@ -114,13 +116,15 @@ card:{
     marginTop: 5,
     textAlign: 'center',
   },
+
+  //QUADRETTINI COLORATI
   cornerTL:{
   position: 'absolute',
   top: -2,
   left: -2,
   width: 8,
   height: 8,
-  backgroundColor: colors.lavender,
+  backgroundColor: colors.mint,
 },
 cornerBR:{
   position: 'absolute',
@@ -128,8 +132,10 @@ cornerBR:{
   right: -2,
   width: 8,
   height: 8,
-  backgroundColor: colors.lavender,
+  backgroundColor: colors.blue,
 },
+
+//CHAR
 traitRow:{
   padding: 4,
   flexDirection: 'row',
@@ -145,6 +151,8 @@ traitText:{
     fontSize: 14,
     marginTop: 5,
 },
+
+//FUNFACTS
 factRow:{
   fontFamily: 'monospace',
   padding: 4,

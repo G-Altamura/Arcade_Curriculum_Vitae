@@ -20,19 +20,43 @@
     ]
   },
   "about": {
-  "story": "After years in hospitality I built resilience, multicultural communication and attention to detail. Now I channel that same energy into crafting clean, beautiful UIs.",
-  "badges": [
-  { "trait": "Reliable", "color": "mint" },
-    { "trait": "Creative", "color": "pink" },
-    { "trait": "Detail-oriented", "color": "lavender" },
-    { "trait": "Curious", "color": "yellow" },
-    { "trait": "Team player", "color": "blue" }
-],
-"funFacts": [
-  { "label": "Favourite stack", "value": "React Native" },
-  { "label": "Favourite sport", "value": "Hiking" },
-  { "label": "Secret power", "value": "Solving problems" },
-  { "label": "IRL location", "value": "Bologna, Italy" }
-]
-}
+    "story": "After years in hospitality I built resilience, multicultural communication and attention to detail. Now I channel that same energy into crafting clean, beautiful UIs.",
+    "badges": [
+    { "trait": "Reliable", "color": "mint" },
+      { "trait": "Creative", "color": "pink" },
+      { "trait": "Detail-oriented", "color": "lavender" },
+      { "trait": "Curious", "color": "yellow" },
+      { "trait": "Team player", "color": "blue" }
+    ],
+    "funFacts": [
+      { "label": "Favourite stack", "value": "React Native" },
+      { "label": "Favourite sport", "value": "Hiking" },
+      { "label": "Secret power", "value": "Solving problems" },
+      { "label": "IRL location", "value": "Bologna, Italy" }
+    ]
+  },
+  "skills": {
+  "title": "STATS MENU",
+  "subtitle": "SUPERPOWERS",  
+      "frontend": {
+      "label": "FRONTEND",
+      "items": ["HTML", "CSS", "JavaScript", "WordPress"]
+    },
+      "Tech_Stack": {
+      "label": "TECH STACK",
+      "items": ["React Native", "React", "Typescript"]
+    },
+      "Crafting_Tools": {
+      "label": "CRAFTING TOOLS",
+      "items": ["Figma", "AI Tools", "Clip Studio Paint"]
+    },
+      "Language_Pack": {
+      "label": "LANGUAGE PACK",
+      "items": ["Italian", "English B2", "French A2"]
+    },
+      "Abilita_Passive": {
+      "label": "OTHER ABILITIES",
+      "items": ["Problem Solving", "Adaptability", "Creativity", "Reliability", "Teamwork"]
+    }
+  }
 }
