@@ -18,6 +18,10 @@ export function AboutScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
+
+        <Text style={styles.title}>{t('about.title')}</Text>
+        <Text style={styles.subtitle}>{t('about.subtitle')}</Text>
+
         <PixelCard borderColor={colors.pink} cornerColor={colors.mint}>
           <View style={styles.chip}>
             <Text style={styles.chipText}>[ STORY ]</Text>
@@ -66,6 +70,18 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 24,
   },
+  title: {
+  color: colors.textMuted,
+  fontFamily: fonts.pixel,
+  fontSize: 10,
+  letterSpacing: 2,
+},
+subtitle: {
+  color: colors.textPrimary,
+  fontFamily: fonts.pixel,
+  fontSize: 18,
+  letterSpacing: 3,
+},
   //STORY; TRAITS; FUN FACTS
   chip:{
   alignSelf: 'flex-start',

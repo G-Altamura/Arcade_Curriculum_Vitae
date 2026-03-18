@@ -20,6 +20,8 @@
     ]
     },
   "about": {
+    "title": "Giulia Altamura",
+    "subtitle": "DOSSIER",
     "story": "Dopo anni nell'ospitalità ho sviluppato resilienza, comunicazione multiculturale e attenzione al dettaglio. Ora convoglio la stessa energia nella creazione di UI pulite e belle.",
       "badges": [
     { "trait": "Esploratrice digitale sempre in apprendimento", "color": "mint" },
@@ -125,6 +127,7 @@
 },
 "projects": {
   "title": "CODICE",
+  "subtitle": "I Miei Lavori",
   "projects": [
     {
       "name": "Studio sulle Mappe",

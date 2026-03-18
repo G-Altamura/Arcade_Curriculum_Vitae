@@ -10,6 +10,7 @@ export function ProjectsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
+        <Text style={styles.subtitle}>{t('projects.subtitle')}</Text>        
         <Text style={styles.title}>{t('projects.title')}</Text>
             {(t('projects.projects', { returnObjects: true }) as Array<{name: string, description: string, github: string, demo: string, tags: string[]}>).map((item) => (
               <PixelCard key={item.name} borderColor={colors.pink} cornerColor={colors.mint}>
@@ -61,9 +62,15 @@ const styles = StyleSheet.create({
   title: {
     color: colors.textPrimary,
     fontFamily: fonts.pixel,
-    fontSize: 15,
+    fontSize: 18,
     letterSpacing: 3,
   },
+  subtitle: {
+    color: colors.textMuted,
+    fontFamily: fonts.pixel,
+    fontSize: 13,
+    letterSpacing: 2,
+},
   projectCard :{
     padding: 10,
     borderWidth: 2,

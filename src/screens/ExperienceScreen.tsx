@@ -100,13 +100,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     letterSpacing: 3,
   },
-  questCard:{
-    padding: 10,
-    borderWidth: 2,
-    borderColor: colors.blue,
-    borderLeftWidth: 2,
-    backgroundColor: colors.bgCard,
-  },
   questHeader:{
     flexDirection: 'row',
     justifyContent: 'space-between',

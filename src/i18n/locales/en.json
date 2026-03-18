@@ -20,6 +20,8 @@
     ]
   },
   "about": {
+    "title": "Giulia Altamura",
+    "subtitle": "DOSSIER",
     "story": "After years in hospitality I built resilience, multicultural communication and attention to detail. Now I channel that same energy into crafting clean, beautiful UIs.",
     "badges": [
     { "trait": "Digital explorer with a continuous learning mindset", "color": "mint" },
@@ -125,6 +127,7 @@
 },
 "projects": {
   "title": "CODE PROJECTS",
+  "subtitle": "My Recent Works",
   "projects": [    
     {
       "name": "Map Study",
