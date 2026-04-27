@@ -26,6 +26,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "baseUrl": "/Arcade_Curriculum_Vitae"
     }
   }
 }
