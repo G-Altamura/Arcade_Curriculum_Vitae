@@ -8,8 +8,8 @@ import { colors } from './src/theme';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    PressStart2P_400Regular: require('./assets/fonts/PressStart2P_400Regular.ttf'),
-    SpaceMono_400Regular: require('./assets/fonts/SpaceMono_400Regular.ttf'),
+    PressStart2P_400Regular: require('./assets/fonts/PressStart2P-Regular.ttf'),
+    SpaceMono_400Regular: require('./assets/fonts/SpaceMono-Regular.ttf'),
   });
 
   if (!fontsLoaded) {
